@@ -36,7 +36,7 @@ app.config["SESSION_PERMANENT"] = False
 Session(app)
 
 # UniFi Controller Details
-UNIFI_CONTROLLER = "https://unifi.zamren.zm:8443"
+UNIFI_CONTROLLER = "" #enter your controller URL here
 SESSION_REQUESTS = requests.Session()
 
 # Configure connection pooling for the requests session
@@ -85,7 +85,8 @@ def get_sites():
 
 
 async def search_site_async(session_async, site, mac_address, cookies, timeout=3):
-    """Search for a MAC address in a specific site asynchronously."""
+    """Search for a MAC address in a specific site asynchronouslytouch .gitignore
+."""
     site_id = site["name"]
     site_desc = site["desc"]
     url = f"{UNIFI_CONTROLLER}/api/s/{site_id}/stat/device-basic"
