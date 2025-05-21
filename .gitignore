@@ -1,2 +1,14 @@
 venv/
 flask_session/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+instance/
+*.log
+*.env
+.DS_Store
+.vscode/
+.idea/
